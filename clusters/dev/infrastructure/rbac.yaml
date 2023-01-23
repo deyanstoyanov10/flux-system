@@ -3,8 +3,6 @@ kind: ServiceAccount
 metadata:
   name: infrastructure-flux
   namespace: infrastructure
-  labels:
-    toolkit.fluxcd.io/tenant: infrastructure
 
 ---
 
@@ -13,8 +11,6 @@ kind: RoleBinding
 metadata:
   name: infrastructure-flux
   namespace: infrastructure
-  labels:
-    toolkit.fluxcd.io/tenant: infrastructure
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
