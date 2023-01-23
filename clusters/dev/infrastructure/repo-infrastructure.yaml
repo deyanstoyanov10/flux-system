@@ -9,7 +9,7 @@ spec:
     branch: dev
   secretRef:
     name: infrastructure-git-flux
-  url: ssh://git@github.com/deyanstoyanov10/infrastructure.git
+  url: ssh://git@github.com/deyanstoyanov10/infrastructure
 
 ---
 
