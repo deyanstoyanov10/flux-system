@@ -5,12 +5,10 @@ metadata:
   namespace: infrastructure
 spec:
   interval: 1m0s
+  url: ssh://git@github.com/deyanstoyanov10/infrastructure
   ref:
     branch: dev
-  secretRef:
-    name: infrastructure-git-flux
-  url: ssh://git@github.com/deyanstoyanov10/infrastructure
-
+    
 ---
 
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
