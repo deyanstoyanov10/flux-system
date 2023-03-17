@@ -9,6 +9,27 @@ metadata:
 ---
 
 apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: flux-limited-account
+  namespace: infrastructure
+rules:
+- apiGroups:
+  - 'helm.toolkit.fluxcd.io'
+  resources:
+  - helmreleases
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+  - patch
+  - delete
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: infrastructure-flux
