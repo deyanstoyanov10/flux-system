@@ -202,6 +202,7 @@ rules:
   - kafkamirrormakers
   - kafkamirrormaker2s
   - kafkabridges
+  - kafkaconnectors
   verbs:
   - get
   - list
