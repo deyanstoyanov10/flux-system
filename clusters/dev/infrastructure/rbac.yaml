@@ -199,6 +199,7 @@ rules:
   resources:
   - kafkas
   - kafkaconnects
+  - kafkamirrormaker2s
   verbs:
   - get
   - list
