@@ -204,6 +204,7 @@ rules:
   - kafkabridges
   - kafkaconnectors
   - kafkarebalances
+  - kafkas/status
   verbs:
   - get
   - list
