@@ -200,6 +200,7 @@ rules:
   - kafkas
   - kafkaconnects
   - kafkamirrormaker2s
+  - strimzipodsets
   verbs:
   - get
   - list
