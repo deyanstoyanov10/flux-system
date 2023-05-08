@@ -217,6 +217,7 @@ rules:
   - 'core.strimzi.io'
   resources:
   - strimzipodsets
+  - strimzipodsets/status
   verbs:
   - get
   - list
