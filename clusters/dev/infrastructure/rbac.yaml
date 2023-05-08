@@ -42,7 +42,9 @@ rules:
 - apiGroups:
   - ''
   resources:
-  - services,serviceaccounts,clusterroles
+  - services
+  - serviceaccounts
+  - clusterroles
   verbs:
   - create
   - get
