@@ -199,8 +199,8 @@ rules:
   resources:
   - kafkas
   - kafkaconnects
+  - kafkamirrormakers
   - kafkamirrormaker2s
-  - strimzipodsets
   verbs:
   - get
   - list
