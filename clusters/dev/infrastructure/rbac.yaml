@@ -201,6 +201,7 @@ rules:
   - kafkaconnects
   - kafkamirrormakers
   - kafkamirrormaker2s
+  - kafkabridges
   verbs:
   - get
   - list
