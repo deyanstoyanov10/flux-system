@@ -113,6 +113,7 @@ rules:
   resources:
   - nodes
   verbs:
+  - get
   - list
 - apiGroups:
   - 'build.openshift.io'
