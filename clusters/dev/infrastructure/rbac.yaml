@@ -178,6 +178,21 @@ rules:
   - update
   - patch
   - delete
+- apiGroups:
+  - 'kafka.strimzi.io'
+  resources:
+  - kafkatopics
+  - kafkatopics/status
+  - kafkausers
+  - kafkausers/status
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+  - patch
+  - delete
 
 ---
 
