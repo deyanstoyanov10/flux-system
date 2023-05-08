@@ -42,19 +42,7 @@ rules:
 - apiGroups:
   - ''
   resources:
-  - services
-  verbs:
-  - create
-  - get
-  - list
-  - watch
-  - update
-  - patch
-  - delete
-- apiGroups:
-  - ''
-  resources:
-  - serviceaccounts
+  - services,serviceaccounts,clusterroles
   verbs:
   - create
   - get
