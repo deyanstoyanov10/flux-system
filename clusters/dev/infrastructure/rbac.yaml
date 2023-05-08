@@ -45,6 +45,12 @@ rules:
   - services
   - serviceaccounts
   - clusterroles
+  - configmaps
+  - endpoints
+  - events
+  - persistentvolumeclaims
+  - pods
+  - secrets
   verbs:
   - create
   - get
@@ -56,7 +62,9 @@ rules:
 - apiGroups:
   - rbac.authorization.k8s.io
   resources:
+  - roles
   - clusterroles
+  - rolebindings
   - clusterrolebindings
   verbs:
   - create
@@ -70,6 +78,10 @@ rules:
   - apps
   resources:
   - deployments
+  - deployments/scale
+  - deployments/status
+  - replicasets
+  - statefulsets
   verbs:
   - create
   - get
@@ -102,6 +114,70 @@ rules:
   - nodes
   verbs:
   - list
+- apiGroups:
+  - 'build.openshift.io'
+  resources:
+  - builds
+  - buildconfigs
+  - buildconfigs/instantiate
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - 'events.k8s.io'
+  resources:
+  - events
+  verbs:
+  - create
+- apiGroups:
+  - 'image.openshift.io'
+  resources:
+  - imagestreams
+  verbs:
+  - get
+- apiGroups:
+  - networking.k8s.io
+  resources:
+  - ingresses
+  - networkpolicies
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - policy
+  resources:
+  - poddisruptionbudgets
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - 'route.openshift.io'
+  resources:
+  - routes
+  - routes/custom-host
+  verbs:
+  - create
+  - get
+  - list
+  - watch
+  - update
+  - patch
+  - delete
 
 ---
 
