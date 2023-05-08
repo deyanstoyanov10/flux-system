@@ -198,6 +198,7 @@ rules:
   - 'kafka.strimzi.io'
   resources:
   - kafkas
+  - kafkaconnects
   verbs:
   - get
   - list
